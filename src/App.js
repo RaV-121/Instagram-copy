@@ -4,20 +4,19 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div class="container">
+        <div class="logo">Instagram</div>
+        <form>
+          <input type="text" placeholder="Telefon, e-mail lub nazwa użytkownika" required />
+          <input type="password" placeholder="Hasło" required />
+          <button type="submit">Zaloguj się</button>
+        </form>
+        <div class="or">LUB</div>
+        <button class="button-diffrent">Zaloguj się przez Facebooka</button>
+        <div class="signup">
+          Nie masz konta? <a href="#">Zarejestruj się</a>
+        </div>
+      </div>
     </div>
   );
 }
